@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Program JavaScript</title>
+</head>
+<body>
+
+<h1>Program JavaScript dengan Alert, Prompt, Confirm, dan Form</h1>
+
+<script>
+// Menggunakan alert
+alert("Halo, Selamat Datang!");
+
+// Menggunakan prompt untuk mengambil input dari pengguna
+var nama = prompt("Masukkan nama Anda:", "");
+
+// Menggunakan confirm untuk mengambil konfirmasi dari pengguna
+var konfirmasi = confirm("Apakah Anda yakin nama Anda adalah " + nama + "?");
+
+// Menggunakan form untuk mengambil input dan menampilkan hasil
+document.write("<h2>Formulir:</h2>");
+document.write("<form id='myForm'>");
+document.write("Nama: <input type='text' id='inputNama'><br>");
+document.write("<input type='submit' value='Submit'>");
+document.write("</form>");
+
+// Menangani submit form
+document.getElementById('myForm').onsubmit = function(event) {
+  event.preventDefault(); // Mencegah form untuk melakukan submit
+  var inputNama = document.getElementById('inputNama').value;
+  alert("Anda mengirimkan nama: " + inputNama);
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Pilihan</title>
+</head>
+<body>
+
+<h1>Menu Pilihan</h1>
+
+<script>
+    function hitungKalkulator() {
+        var angka1 = parseFloat(prompt("Masukkan angka pertama:"));
+        var operator = prompt("Masukkan operator (+, -, *, /):");
+        var angka2 = parseFloat(prompt("Masukkan angka kedua:"));
+
+        if (operator === "+") {
+            return angka1 + angka2;
+        } else if (operator === "-") {
+            return angka1 - angka2;
+        } else if (operator === "*") {
+            return angka1 * angka2;
+        } else if (operator === "/") {
+            return angka1 / angka2;
+        } else {
+            return "Operator tidak valid";
+        }
+    }
+
+    function hitungLuasTrapesium() {
+        var alas = parseFloat(prompt("Masukkan panjang alas trapesium:"));
+        var tinggi = parseFloat(prompt("Masukkan tinggi trapesium:"));
+        return 0.5 * (alas + 5) * tinggi;
+    }
+
+    function hitungDeret() {
+        var nilaiAwal = parseInt(prompt("Masukkan nilai awal deret:"));
+        var nilaiAkhir = parseInt(prompt("Masukkan nilai akhir deret:"));
+        var deret = [];
+
+        for (var i = nilaiAwal; i <= nilaiAkhir; i++) {
+            deret.push(i);
+        }
+        return deret;
+    }
+
+    var pilihan = parseInt(prompt("Menu Pilihan:\n[1] Menghitung Kalkulator\n[2] Menghitung Luas Trapesium\n[3] Menghitung Deret\nPilihan Anda:"));
+
+    if (pilihan === 1) {
+        var hasilKalkulator = hitungKalkulator();
+        document.write("<p>Hasil Kalkulator: " + hasilKalkulator + "</p>");
+    } else if (pilihan === 2) {
+        var luasTrapesium = hitungLuasTrapesium();
+        document.write("<p>Luas Trapesium: " + luasTrapesium + "</p>");
+    } else if (pilihan === 3) {
+        var deretBilangan = hitungDeret();
+        document.write("<p>Deret Bilangan: " + deretBilangan.join(", ") + "</p>");
+    } else {
+        document.write("<p>Pilihan Anda tidak valid</p>");
+    }
+</script>
+
+</body>
+</html>

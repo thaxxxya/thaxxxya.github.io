@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Sederhana</title>
+</head>
+<body>
+
+<h1>Kalkulator Sederhana</h1>
+
+<label for="num1">Masukkan Bilangan Pertama: </label>
+<input type="number" id="num1"><br>
+
+<label for="num2">Masukkan Bilangan Kedua: </label>
+<input type="number" id="num2"><br>
+
+<button onclick="tambah()">Tambah</button>
+<button onclick="kurang()">Kurang</button>
+<button onclick="kali()">Kali</button>
+<button onclick="bagi()">Bagi</button>
+
+<p>Hasil: <span id="hasil"></span></p>
+
+<script>
+function tambah() {
+  var num1 = parseFloat(document.getElementById("num1").value);
+  var num2 = parseFloat(document.getElementById("num2").value);
+  var hasil = num1 + num2;
+  document.getElementById("hasil").textContent = hasil;
+}
+
+function kurang() {
+  var num1 = parseFloat(document.getElementById("num1").value);
+  var num2 = parseFloat(document.getElementById("num2").value);
+  var hasil = num1 - num2;
+  document.getElementById("hasil").textContent = hasil;
+}
+
+function kali() {
+  var num1 = parseFloat(document.getElementById("num1").value);
+  var num2 = parseFloat(document.getElementById("num2").value);
+  var hasil = num1 * num2;
+  document.getElementById("hasil").textContent = hasil;
+}
+
+function bagi() {
+  var num1 = parseFloat(document.getElementById("num1").value);
+  var num2 = parseFloat(document.getElementById("num2").value);
+  var hasil = num1 / num2;
+  document.getElementById("hasil").textContent = hasil;
+}
+</script>
+
+</body>
+</html>

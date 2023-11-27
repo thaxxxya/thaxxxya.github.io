@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deret Bilangan Genap Habis Dibagi 3</title>
+</head>
+<body>
+
+<h1>Deret Bilangan Genap Habis Dibagi 3</h1>
+
+<script>
+    var nilaiAwal = parseInt(prompt("Masukkan nilai awal deret:"));
+    var nilaiAkhir = parseInt(prompt("Masukkan nilai akhir deret:"));
+
+    document.write("<p>Nilai Awal: " + nilaiAwal + "</p>");
+    document.write("<p>Nilai Akhir: " + nilaiAkhir + "</p>");
+
+    var deret = [];
+
+    for (var i = nilaiAwal; i <= nilaiAkhir; i++) {
+        if (i % 2 === 0 && i % 3 === 0) {
+            deret.push(i);
+        }
+    }
+
+    document.write("<p>Deret yang tampil: " + deret.join(", ") + "</p>");
+    document.write("<p>Jumlah deret bilangan: " + deret.length + " bilangan</p>");
+
+    var jumlahNilai = deret.reduce(function (a, b) {
+        return a + b;
+    }, 0);
+
+    document.write("<p>Jumlah nilai bilangan tersebut: " + jumlahNilai + "</p>");
+</script>
+
+</body>
+</html>

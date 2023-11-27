@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menghitung Luas Trapesium</title>
 </head>
 <body>
-    
+    <h1>Menghitung Luas Trapesium</h1>
+
+    <script>
+        // Mendefinisikan variabel untuk garis atas, garis bawah, dan tinggi
+        var garisAtas = 8; // Isi dengan nilai garis atas dalam centimeter
+        var garisBawah = 12; // Isi dengan nilai garis bawah dalam centimeter
+        var tinggi = 5; // Isi dengan nilai tinggi dalam centimeter
+
+        // Menghitung luas trapesium
+        var luas = (garisAtas + garisBawah) * tinggi / 2;
+
+        // Menampilkan output
+        document.write("Diketahui :<br>");
+        document.write("Garis Atas : " + garisAtas + " Cm<br>");
+        document.write("Garis Bawah : " + garisBawah + " Cm<br>");
+        document.write("Tinggi : " + tinggi + " Cm<br>");
+        document.write("Maka :<br>");
+        document.write("Luas : " + garisAtas + " + " + garisBawah + " * " + tinggi + " / 2 = " + luas + " Cm<sup>2</sup>");
+    </script>
 </body>
 </html>
