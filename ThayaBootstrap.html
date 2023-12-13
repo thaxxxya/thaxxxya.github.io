@@ -1,70 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <header class="bg-dark text-white text-center py-5">
-        <h1>Athaya Putri</h1>
-        <p class="lead">Personal assistant CFO</p>
-    </header>
+    <!-- My css -->
+    <link rel="stylesheet" href="style.css" />
 
-    <div class="container mt-4">
+    <title>Portofolio| Athaya Putri</title>
+  </head>
+  
+  <body id="home">
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Athaya Putri</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galery">Galery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p class="lead">Saya adalah lulusan akuntansi dengan predikat akuntansi junior, saat ini saya masih berkuliah di unversitas yang terkenal di Pamulang yaitu UNPAM, saat ini saya masih bekerja sebagai staff dan saya sangat kompetitif terhadap pekerjaan dan tugas saya.</p>
-        </section>
+    <!-- jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="dewa.jpg" alt="Athaya Putri" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">Athaya Putri</h1>
+      <p class="lead">IT Support</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L48,106.7C96,117,192,139,288,138.7C384,139,480,117,576,112C672,107,768,117,864,138.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir jumbotron -->
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>Git</li>
-            </ul>
-        </section>
+    <!-- about -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <h2>About Me</h2>
+        </div>
+        <div class="row justify-content-center fs-4 text-center">
+          <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, nobis ducimus. Praesentium ipsum modi quod! Dolor tempore facere natus est.</p>
+          </div>
+          <div class="col-md-4">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum id dignissimos porro tenetur assumenda error dolorem dolores inventore corrupti, sint eaque doloremque ab molestias rem accusantium!</p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#2b91e6a2"
+          fill-opacity="1"
+          d="M0,32L48,48C96,64,192,96,288,128C384,160,480,192,576,192C672,192,768,160,864,160C960,160,1056,192,1152,186.7C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir about -->
 
-        <section id="projects">
-            <h2>Projects</h2>
+    <!-- galery -->
+    <section id="galery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <h2>My Galery</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
             <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Project 1: Portfolio Website</h3>
-                    <p class="card-text">Website Laundry.</p>
-                </div>
+              <img src="ITSupport.jpg" class="card-img-top" alt="dewa" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
             </div>
-
-            <div class="card mt-3">
-                <div class="card-body">
-                    <h3 class="card-title">Project 2: Task Manager App</h3>
-                    <p class="card-text">Web Manager.</p>
-                </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="hardware & software.png" class="card-img-top" alt="bulan" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
             </div>
-
-            <div class="card mt-3">
-                <div class="card-body">
-                    <h3 class="card-title">Project 3: Blog Platform</h3>
-                    <p class="card-text">Blog me</p>
-                </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="Databases.png" class="card-img-top" alt="dewa-3" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,128L26.7,149.3C53.3,171,107,213,160,229.3C213.3,245,267,235,320,218.7C373.3,203,427,181,480,165.3C533.3,149,587,139,640,154.7C693.3,171,747,213,800,234.7C853.3,256,907,256,960,234.7C1013.3,213,1067,171,1120,149.3C1173.3,128,1227,128,1280,133.3C1333.3,139,1387,149,1413,154.7L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir galery -->
 
-        <section id="education">
-            <h2>Education</h2>
-            <p>University Pamulang</p>
-        </section>
+    <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3 justify-content-center">
+          <div class="col">
+            <h2>contact me</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <form name="contact-form">
+                <div class="alert alert-primary d-none" role="alert">Terimakasih Sudah Kirim pesan</div>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">pesan</label>
+                  <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,96L26.7,133.3C53.3,171,107,245,160,266.7C213.3,288,267,256,320,234.7C373.3,213,427,203,480,192C533.3,181,587,171,640,186.7C693.3,203,747,245,800,240C853.3,235,907,181,960,144C1013.3,107,1067,85,1120,74.7C1173.3,64,1227,64,1280,74.7C1333.3,85,1387,107,1413,117.3L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+    </section>
+    <!-- akhir contact -->
 
+    <!-- footer -->
+    <footer class="bg-primary text-center pb-5">
+      <p>Created by <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/yulian.dewantara/" class="text-white fw-bold">Athaya Putri</a></p>
+    </footer>
+    <!-- akhir footer -->
 
-    </div>
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
+    <!-- ikon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- akhir ikon -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwX-tB4oZ0Xh1XfEWbtPhLOlh9MxBuEmf-bpqKfKcB0h9I2Pr1r0EVLVuwmn8_aeGHmEw/exec'
+      const form = document.forms['contact-form']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  
+  </body>
 </html>
