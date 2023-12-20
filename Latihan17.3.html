@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Harga Barang</title>
+</head>
+<body>
+    <script>
+        var myName = prompt("Please enter your name", "iqbal");
+        var nb = prompt("Please enter the item name", "");
+        var hs = prompt("Please enter the unit price", "");
+        var jb = prompt("Please enter the quantity", "");
+        var hb = hs * jb;
+        var disc;
+
+        if (hb > 500000) {
+            disc = (5 / 100 * hb);
+        } else if (hb > 300000) {
+            disc = (2 / 100 * hb);
+        } else {
+            disc = (0.5 / 100 * hb);
+        }
+        var hbb = hb - disc;
+
+        document.write("<h1 style='color: blue;'>Penjualan Harga Barang</h1>");
+        document.write("<pre style='font-size: 20px; color: sienna;'>");
+        document.write("============================", "<br>");
+        document.write("Nama Barang =", nb, "<br>");
+        document.write("Harga satuan =", hs, "<br>");
+        document.write("Jumlah barang =", jb, "<br>");
+        document.write("Harga barang =", hb, "<br>");
+        document.write("Harga Discount =", disc, "<br>");
+        document.write("Harga barang bersih =", hbb, "<br>");
+        document.write("============================", "<br>");
+        document.write("</pre>");
+        document.write("<p style='font-size: 16px; color: red;'>Created by: " + myName + "</p>");
+    </script>
+</body>
+</html>
